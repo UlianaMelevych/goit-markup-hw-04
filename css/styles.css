@@ -131,6 +131,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 background-repeat: no-repeat;
 max-width: 1440px; 
 background-size: cover;
+background-position: center; 
 }
 
 .hero-title{
@@ -282,6 +283,7 @@ color: #434455;
 .icon-line{
     width: 40px;
     height: 40px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .icon-link{
     width: 100%;
@@ -325,16 +327,17 @@ color: #2e2f42;
 }
 .portfolio-line{
     width: calc((100% - 48px) / 3);
+    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.portfolio-line:hover{
+.portfolio-line:hover .overlay{
     transform: translateY(0%);
 }
 .icon-container{
     position: relative; 
     overflow: hidden;
 }
-.overflow{
+.overlay{
     position: absolute; 
     top: 0; 
     font-size: 16px;
@@ -383,6 +386,14 @@ color: #434455;
     margin: auto;
     padding: 100px 0
     }
+.container-footer{
+        display: flex;
+        align-items: baseline;
+
+    }
+.footer-list-container{
+    margin-right: 120px;
+    }
     
 .footer-logo{
     display: inline-block; 
@@ -405,4 +416,37 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+}
+.icon-footer-descr{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px; 
+}
+.icon-footer-list{
+    display: flex;
+    gap: 16px; 
+}
+.icon-footer-line{
+    width: 40px;
+    height: 40px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer-link{
+    width: 100%;
+    height: 100%;
+    background-color:  #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.icon-footer-link:hover,
+.icon-footer-link:focus{
+    background-color: #31d0aa; 
+}
+.icon-footer-svg{
+    fill: #f4f4fd;
 }
