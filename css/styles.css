@@ -283,7 +283,7 @@ color: #434455;
 .icon-line{
     width: 40px;
     height: 40px;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   
 }
 .icon-link{
     width: 100%;
@@ -293,7 +293,11 @@ color: #434455;
     display: flex; 
     align-items: center;
     justify-content: center; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+    
+
 .icon-link:hover,
 .icon-link:focus{
     background-color: #404bbf;
@@ -441,7 +445,8 @@ color: #f4f4fd;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .icon-footer-link:hover,
 .icon-footer-link:focus{
