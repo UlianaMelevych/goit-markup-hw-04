@@ -268,7 +268,7 @@ color: #2e2f42;
 }
 .team-prof{
     text-align: center; 
-    margin-bottom: 32px;
+    margin-bottom: 8px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -367,8 +367,6 @@ background: url("path_to_image");
 }
 .portfolio-descr{
     justify-content: center;
-    margin-top: 32px;
-    margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -377,7 +375,6 @@ color: #2e2f42;
 }
 .portfolio-descr-line{
     margin-top: 8px;
-    margin-bottom: 32px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
